@@ -1,0 +1,15 @@
+{% extends 'admin/layout.html' %}
+
+{% block content %}
+<h1 class="large-font">This is my admin start page</h1>
+<ul class="large-font">
+    <li>List item 1</li>
+    <li>List item 2</li>
+</ul>
+
+{% if name %}
+<!-- html comment -->
+Your name is: {{ name }} {# this is name in render_template on the left side #}
+Your age is: {{ age }}
+{% endif %}
+{% endblock %}
